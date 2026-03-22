@@ -1,147 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Nikhil's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-     <script src="https://kit.fontawesome.com/f22599df8c.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PolicyLens AI | Health Policy Simplification Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <nav>
-    <ul>
-         <button class="contact-btn"><a href="mailto:nikhilnanwani.work@gmail.con">Contact</a></button>
-      <li><a href="#home">Home</a></li>
-      <li><a href="services.html" target="_blank">Services</a></li>
-      <li> <a href="#testimonials">Testimonials</a></li>
-      <li><a href="#about-me">About</a></li>
-       <li><a href="#socials">Socials</a></li>
-     
-    </ul>
-  </nav>
-  
-  <!-- header -->
-  <header>
-   
-    <div class="header-text">
-      <h1>Hi! I'm Nikhil,<br>A Freelance<br> Graphic Designer & Editor</h1>
-      <p class="start-p">DESIGNING | BRANDING | EDITING</p>
-    </div>
-     <div class="logo">
-      <img src="logo-main.png" alt="Logo">
-    </div>
-  </header>
-  
-<div class="container">
-    <h2 class="available">
-        Available<br> For Works !
-    </h2>
-</div>
-
-<!-- cards -->
-<section id="services">
-<h2 class="headings">Services.</h2>
-<p class="sub-head">Here are some services that we provide.</p>
-
-  <div class="card-container">
-    <div class="card">
-      <div class="card-content">
-        <h2> <i class="fa-solid fa-compass-drafting"></i>  Branding</h2>
-        
+  <div class="page-shell">
+    <nav class="top-nav">
+      <a class="brand" href="#home">PolicyLens AI</a>
+      <div class="nav-links">
+        <a href="#solution">Solution</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#experience">Experience</a>
+        <a href="services.html">Technical View</a>
       </div>
-    </div>
-    <div class="card">
-      <div class="card-content">
-        <h2> <i class="fa-solid fa-pen-nib"></i>  Logo Designing</h2>
-        
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-content">
-        <h2> <i class="fa-solid fa-code"></i>  Web Designing</h2>
-        
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-content">
-       <h2><i class="fa-regular fa-thumbs-up"></i>  Social Media Posts</h2>
-      
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-content">
-      <h2> <i class="fa-solid fa-video"></i>  Video Editing</h2>
-       
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-content">
-        <h2><i class="fa-regular fa-image"></i>  Photo Editing</h2>
-        
-       
-      </div>
-    </div>
-    
+      <a class="nav-cta" href="#demo">Launch Demo</a>
+    </nav>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow">AI-powered healthcare policy intelligence</p>
+          <h1>Simplify complex health policy documents for everyday users.</h1>
+          <p class="hero-text">
+            PolicyLens AI transforms dense policy language into concise summaries, auto-generated questions,
+            and trustworthy answers using a T5 summarization pipeline and a fine-tuned BERT question-answering engine.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-btn" href="#demo">Try the workflow</a>
+            <a class="secondary-btn" href="services.html">Explore the architecture</a>
+          </div>
+          <ul class="hero-metrics">
+            <li>
+              <strong>T5</strong>
+              <span>Policy summarization</span>
+            </li>
+            <li>
+              <strong>BERT</strong>
+              <span>Healthcare Q&amp;A</span>
+            </li>
+            <li>
+              <strong>Upload-ready</strong>
+              <span>Plain text and pasted policy excerpts</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-panel" id="demo">
+          <div class="panel-header">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <p>Interactive policy simplifier</p>
+          </div>
+
+          <div class="upload-card">
+            <div>
+              <p class="label">1. Upload policy text</p>
+              <h2>Health Equity Reporting Rule</h2>
+              <p class="muted">
+                Users can paste long policy language or upload a text file for instant preprocessing and inference.
+              </p>
+            </div>
+            <button type="button">Upload .txt / Paste text</button>
+          </div>
+
+          <div class="result-grid">
+            <article class="result-card">
+              <p class="label">2. T5 summary</p>
+              <p>
+                The policy asks healthcare organizations to report patient outcome gaps, document equity initiatives,
+                and provide annual progress updates in language accessible to regulators and the public.
+              </p>
+            </article>
+            <article class="result-card">
+              <p class="label">3. Auto-generated questions</p>
+              <ul>
+                <li>Who must submit these reports?</li>
+                <li>What data should be included?</li>
+                <li>How often are updates required?</li>
+              </ul>
+            </article>
+            <article class="result-card answer-card">
+              <p class="label">4. BERT answer</p>
+              <p class="answer-question">How often are updates required?</p>
+              <p>
+                Annual progress updates are required, with supporting metrics for disparities, intervention status,
+                and improvement targets for the next reporting cycle.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="value-strip" id="solution">
+        <div>
+          <p class="eyebrow">Designed for clarity</p>
+          <h2>Turn technical healthcare policies into guided understanding.</h2>
+        </div>
+        <p>
+          The experience is built for patients, community advocates, healthcare teams, and policy analysts who need quick,
+          accurate explanations without reading dozens of pages of regulatory text.
+        </p>
+      </section>
+
+      <section class="capabilities">
+        <article class="capability-card">
+          <span>01</span>
+          <h3>Policy upload &amp; parsing</h3>
+          <p>Accept raw policy text, normalize formatting, and prepare sections for inference.</p>
+        </article>
+        <article class="capability-card">
+          <span>02</span>
+          <h3>T5-powered summarization</h3>
+          <p>Generate concise, plain-language summaries that preserve important healthcare policy requirements.</p>
+        </article>
+        <article class="capability-card">
+          <span>03</span>
+          <h3>Question generation</h3>
+          <p>Automatically surface the most relevant questions general users are likely to ask after reading a policy.</p>
+        </article>
+        <article class="capability-card">
+          <span>04</span>
+          <h3>Fine-tuned BERT answers</h3>
+          <p>Respond with focused, context-aware answers extracted from the uploaded document.</p>
+        </article>
+      </section>
+
+      <section class="workflow" id="workflow">
+        <div class="section-heading">
+          <p class="eyebrow">Workflow</p>
+          <h2>A guided AI pipeline for understandable policy communication.</h2>
+        </div>
+        <div class="timeline">
+          <article>
+            <h3>Ingestion</h3>
+            <p>Users upload or paste policy text through a clean interface optimized for long-form documents.</p>
+          </article>
+          <article>
+            <h3>Summarization</h3>
+            <p>A T5 model produces short, approachable explanations of the main obligations, timelines, and stakeholders.</p>
+          </article>
+          <article>
+            <h3>Question generation</h3>
+            <p>The system proposes meaningful follow-up questions so non-experts can explore the document naturally.</p>
+          </article>
+          <article>
+            <h3>Answer retrieval</h3>
+            <p>A fine-tuned BERT model extracts accurate responses grounded in the original healthcare policy text.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="experience" id="experience">
+        <div class="section-heading narrow">
+          <p class="eyebrow">User experience</p>
+          <h2>Built to feel approachable, even when the source document is not.</h2>
+        </div>
+        <div class="experience-grid">
+          <article>
+            <h3>Readable output</h3>
+            <p>Summaries use short sentences, clear labels, and visual hierarchy for quick scanning.</p>
+          </article>
+          <article>
+            <h3>Confidence through context</h3>
+            <p>Answers stay tied to the uploaded policy so users understand what the model is referencing.</p>
+          </article>
+          <article>
+            <h3>Decision support</h3>
+            <p>Stakeholders can identify reporting rules, deadlines, responsibilities, and compliance expectations faster.</p>
+          </article>
+          <article>
+            <h3>Healthcare focus</h3>
+            <p>The content and examples are tailored to technical health policy language rather than generic documents.</p>
+          </article>
+        </div>
+      </section>
+    </main>
   </div>
-   <button class="view-btn"><a href="services.html">View All</a></button>
-
-</section>
-
-
-  <!-- testimonials -->
-  <section id="testimonials">
-  <h2 class="headings">Testimonials.</h2>
-<p class="sub-head">Some of the Testimonials from our clients.</p>
-    <h2 id="testimonials">Testimonials.</h2>
-    
-<div class="testimonial-container">
-  <div class="testimonial-card">
-    <i class="fa-regular fa-thumbs-up"></i>
-    <p class="testimonial-text">“Nikhil's Head did absolutely excellent work for me designing a logo branding, and other social media posts and did it quickly! I will use Nikhil Head every time I have a need. I can’t say enough positive things about the experience.”</p>
-    <p class="testimonial-author">~ Client</p>
-  </div>
-
-  <div class="testimonial-card">
-    <i class="fa-regular fa-thumbs-up"></i>
-   <p class="testimonial-text">“Nikhil was wonderful to work with. He was very patient in working with us, very professional, easy to work with and very responsive. I would highly recommend him to anyone looking for design services!”</p>
-    <p class="testimonial-author">~ Client</p>
-   
-  </div>
-
-  <div class="testimonial-card"><i class="fa-regular fa-thumbs-up"></i>
-   <p  class="testimonial-text">“Nikhil created a logo for my Youtube and Twitch Handles. He was very professional, prompt and a pleasure to work with from start to finish. He came up with a terrific logo that I am very happy with and proud to post it everywhere.”</p>
-    <p class="testimonial-author">~ Client</p>
-  
-  </div>
-</div>
-</section>
-
- <!-- About Me -->
- <section id="about-me">
-      <div id="about-me"class="about">
-      <h2 class="headings">About Me</h2>
-<p class="sub-head">Get to know about me.</p>
-      <img class="abt-img"src="image/logo-main.png" width="100px"alt="">
-      
-<h4>Nikhil Nanwani</h4>
-<p class="abt-me">Hey There!<b> I'm Nikhil Nanwani </b>from Nagpur, Maharashtra.<br>Im a <b>Freelance Graphic Designer </b>with Creative Skills of Logo Designing, Vector Illustrations and Editing Skills.<br>
-You can <b>connect</b> with me on my Socials or<b> <br>Mail me at nikhilnanwani.work@gmail.com</b>
-</p>
-</div>
-
- </section>
-      <!-- footer -->
-  <div id="socials" class="footer"><center>
-   <img src="logo1.png" width="200px" alt=""><div id="footer">
-  <a href="mailto:nikhilnanwani.work@gmail.com"> <i  class="fa-regular fa-envelope fa-2x"></i></a>
- <a href="https://instagram.com/nikhil.nanwani28?igshid=MzRlODBiNWFlZA=="> <i class="fa-brands fa-instagram fa-2x"></i></a>
-  <i class="fa-brands fa-linkedin fa-2x"></i>
- <a href="https://github.com/createdbynikhil/"> <i class="fa-brands fa-github fa-2x"></i></a>
-  </center>
-  </div>
-  </div>
-  
-
 </body>
 </html>
